@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fornecedores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Cadastro de Fornecedores</h1>
+
+        <form>
+
+            <!-- Dados básicos -->
+            <fieldset>
+                <legend>Dados do Fornecedor</legend>
+
+                <label>Razão Social</label>
+                <input type="text" placeholder="Digite a razão social" required>
+
+                <label>Nome Fantasia</label>
+                <input type="text" placeholder="Digite o nome fantasia">
+
+                <label>CNPJ</label>
+                <input type="text" placeholder="00.000.000/0000-00" required>
+
+                <label>Inscrição Estadual</label>
+                <input type="text" placeholder="Digite a inscrição estadual">
+            </fieldset>
+
+            <!-- Contato -->
+            <fieldset>
+                <legend>Contato</legend>
+
+                <label>Nome do Contato</label>
+                <input type="text" placeholder="Responsável">
+
+                <label>Email</label>
+                <input type="email" placeholder="email@empresa.com">
+
+                <label>Telefone</label>
+                <input type="tel" placeholder="(00) 00000-0000">
+            </fieldset>
+
+            <!-- Endereço -->
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label>CEP</label>
+                <input type="text" placeholder="00000-000">
+
+                <label>Endereço</label>
+                <input type="text" placeholder="Rua, avenida...">
+
+                <label>Número</label>
+                <input type="text">
+
+                <label>Bairro</label>
+                <input type="text">
+
+                <label>Cidade</label>
+                <input type="text">
+
+                <label>Estado</label>
+                <select>
+                    <option>Selecione</option>
+                    <option>ES</option>
+                    <option>SP</option>
+                    <option>RJ</option>
+                    <option>MG</option>
+                </select>
+            </fieldset>
+
+            <!-- Dados comerciais -->
+            <fieldset>
+                <legend>Dados Comerciais</legend>
+
+                <label>Tipo de Fornecedor</label>
+                <select>
+                    <option>Produto</option>
+                    <option>Serviço</option>
+                    <option>Ambos</option>
+                </select>
+
+                <label>Forma de Pagamento</label>
+                <select>
+                    <option>Boleto</option>
+                    <option>PIX</option>
+                    <option>Transferência</option>
+                </select>
+
+                <label>Prazo de Pagamento</label>
+                <input type="text" placeholder="Ex: 30 dias">
+
+                <label>Status</label>
+                <select>
+                    <option>Ativo</option>
+                    <option>Inativo</option>
+                </select>
+            </fieldset>
+
+            <!-- Botões -->
+            <div class="actions">
+                <button type="submit">Salvar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>
